@@ -1,0 +1,196 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25-feb-2017, 15:35:08
+    Author     : danslans
+*/
+.IcHome{
+    background-image: url(http://danslans.000webhostapp.com/TheMusic/Content/images/icons/home.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+.IcHome:active{
+    opacity: 0.5;
+}
+.IcSearch{
+    background-image: url(https://danslans.000webhostapp.com/TheMusic/Content/images/icons/search.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+.IcSearch:active{
+    opacity: 0.5;
+}
+.IcPlus{
+    background-image: url(http://danslans.000webhostapp.com/TheMusic/Content/images/icons/plus.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+.IcPlus:active{
+    opacity: 0.5;
+}
+.IcExit{
+    background-image: url(http://danslans.000webhostapp.com/TheMusic/Content/images/icons/exit.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+.IcExit:active{
+    opacity: 0.5;
+}
+
+.IcPoint{
+    background-image: url(http://danslans.000webhostapp.com/TheMusic/Content/images/icons/point.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    display: none;
+}
+.IcPoint:active{
+    opacity: 0.5;
+}
+.IcMore{
+    background-image: url(http://danslans.000webhostapp.com/TheMusic/Content/images/icons/mas.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+.IcMore:active{
+    opacity: 0.9;
+}
+.IcBtnList{
+    background-image: url(http://danslans.000webhostapp.com/TheMusic/Content/images/icons/delete.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 10px center; 
+    color: #673AB7;
+}
+
+.IcCerrar{
+    background-image: url(http://danslans.000webhostapp.com/TheMusic/Content/images/icons/cancel.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position:top right;
+    right: 10px;
+}
+.IcBack{
+    background-image: url(http://danslans.000webhostapp.com/TheMusic/Content/images/icons/back.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.IcBack:active{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline: 0;
+}
+.IcNext{
+    background-image: url(http://danslans.000webhostapp.com/TheMusic/Content/images/icons/next.png);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.IcNext:active{
+     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);   
+    outline: 0;
+}
+.IcAdd{
+    background-image: url(http://danslans.000webhostapp.com/TheMusic/Content/images/icons/add.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.IcAdd:active{
+    opacity: 0.3;
+}
+.IcCheckActive{
+    position: relative;
+    background-image: url(http://danslans.000webhostapp.com/TheMusic/Content/images/icons/checked.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+.IcCheckActive:active{
+    opacity: 0.5;
+}
+
+/*icons Mobile*/
+.IcHomeMobile{
+    position: relative;
+    top: 10px;
+    background-image: url(http://danslans.000webhostapp.com/TheMusic/Content/images/icons/homeMobile.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.IcHomeMobile:active{
+    opacity: 0.5;
+}
+.IcSearchMobile{
+    position: relative;
+    top: 10px;
+    background-image: url(http://danslans.000webhostapp.com/TheMusic/Content/images/icons/searchMobile.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.IcSearchMobile:active{
+    opacity: 0.5;
+}
+.IcPlusMobile{
+    position: relative;
+    top: 10px;
+    background-image: url(http://danslans.000webhostapp.com/TheMusic/Content/images/icons/addMobile.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.IcPlusMobile:active{
+    opacity: 0.5;
+}
+.IcExitMobile{
+    position: relative;
+    top: 10px;
+    background-image: url(http://danslans.000webhostapp.com/TheMusic/Content/images/icons/logoutMobile.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.IcExitMobile:active{
+    opacity: 0.5;
+}
+.IcMenuMobile{
+    background-image: url(http://danslans.000webhostapp.com/TheMusic/Content/images/icons/menuMobile.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    
+}
+.IcMenuMobile:active{
+       opacity: 0.5;
+}
+.IcFloatAdd{
+    background-image: url(http://danslans.000webhostapp.com/TheMusic/Content/images/icons/addSongsContador.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+}
+
+.IcLupaMobile{
+    background-image: url(http://danslans.000webhostapp.com/TheMusic/Content/images/icons/lupa.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.IcLupaMobile:active{
+       opacity: 0.5;
+}
+.IcLoadPage{
+     background-image: url(http://danslans.000webhostapp.com/TheMusic/Content/images/icons/loading.gif);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -1,0 +1,455 @@
+/* 
+    Created on : 24-feb-2017, 20:50:29
+    Author     : danslans
+@import "compass/css3";
+*/
+
+
+li{
+    color:red;
+    }
+body{
+    margin: auto;  
+    background-color: #ffffff;
+}
+#header{
+		background: #0D47A1;
+    box-shadow:10px 3px 10px 3px #ffffff; 
+}
+
+.itemsMenu{
+        background-color: #03A9F4;
+    }
+.titleMenu{
+    background-color: #0D47A1;
+    box-shadow: 2px 2px 20px 2px #9E9E9E;
+    }
+/*web*/
+@media not screen and (max-width: 200px) {
+    /*this section is for header   1000px*/
+    #header{
+        display: flex;
+        position:fixed;
+        width: 100%;
+        height: 55px;
+    }
+    .content{
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+        width: 100%;
+    }
+    #title{
+        position: relative;
+        display: none;
+        margin-left: 80px;
+        top: -10px;
+    }
+    .itemsMenu{
+        position: relative;
+        padding: 30px;
+        top: 10px;  
+    border-radius:50px;
+    }
+    .itemsMenu>.icons{
+        padding: 10px 20px 10px 20px;        
+    }
+    .iconsMore{
+        position: relative;
+        padding: 0;
+        width: 30%;
+        height: 100%;
+    }
+    .urlTextNav{
+        font-family: serif;
+        font-size: x-large;
+        color: white;
+        text-decoration: none;
+        padding: 0px 15px 0px 15px ;
+    }
+    .urlTextNav:hover{
+        color: #D1C4E9;
+        text-decoration: none;
+    }
+    .a{
+        color: white;
+        text-decoration: none;
+    }
+    .a:hover{
+        color: #D1C4E9;
+        text-decoration: none;
+    }
+    /*Submenu from more ALL MENU*/
+
+    #ulSub{
+        width: auto;
+        height: auto;
+        position: absolute;
+        top:30px;
+        right: 0px;
+        list-style: none;   
+        padding: 0;
+        display: none;
+    }
+    /*atras y siguiente INDEX*/
+    #atras{
+        position: absolute;
+        padding: 20px;
+        height: 100%;
+        width: 40%;
+        top: 0;
+    }
+    #atras:focus{
+        outline: 0;
+    }
+    #atras:hover{
+        outline: 0;
+    }
+    #siguiente{
+        position: absolute;
+        padding: 20px;
+        height: 100%;
+        width: 35%;
+        left: 50%;
+        top: 0; 
+    }
+    /*diseÃ±o de las imagenes INDEX*/
+    #contenedor{
+        position: relative;
+        top: 55px;
+        z-index:-1;
+    }
+    #section{
+        width: 100%;
+    }
+    /*el ul que contiene las imagenes INDEX */
+    #ulAllImages{
+        list-style: none;
+        display: flex;
+        overflow-x: scroll;
+        margin-left: -45px;
+    }
+    /*los items (imagenes) INDEX*/
+    .itemsAllImagen{
+        position: relative;
+        background-color: black;
+        height: 100%;
+        width: 300px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-left: 10px;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 10px;
+        color: white;
+    }
+    .itemsAllImagen>.imgAllItem{
+        position: relative;
+        height:300px;
+        width:300px;
+    }
+    .itemsAllImagen:hover{
+        background-color:#008799; 
+        color: white;
+        cursor: zoom-in;
+    }
+    /*DiseÃ±o de la PROYECXION INDEX */ 
+    #dialogo{
+        display: none;
+        background: black;
+        position:absolute;
+        overflow: scroll;
+        top:0px; 
+        width: 100%;
+        height: 100%;
+    }
+    #imgDialog{
+        height: 100%;
+        width: 100%;
+    }
+    #x{
+        position: fixed;
+        height: 60px;
+        width: 60px;
+        top: 0px;
+        z-index: 1;
+    }
+
+    /*diseÃ±o del buscador (Buscar)  */
+
+    .menuBuscar{
+        display: flex;
+    }
+    /*este es cambiante para las pantallas*/
+    /*Este es el formulario de buscar */
+    #formBusqueda{ 
+        width: 70%;
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+    #recibir{
+        height: 100px;
+        width: 100%;
+    }
+    /*diseÃ±o de la lista que se ha seleccionado*/
+    #ulSelectedImg{
+        position: relative;
+        padding: 0;
+        height: 100px;
+        width: 100%;
+        list-style: none;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: none;
+        -webkit-flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+
+    .itemsSelectedImg{
+        position: relative;
+        background-color: #ffffff;
+        height: 40px;
+        width: 70px;
+        text-align: center;
+        justify-content: center;
+        margin-right: 10px;
+        border-radius: 20px;
+    }
+    .listaSelect{
+        position: relative;
+        margin-top: auto;
+        top: 12px;
+    }
+    
+    /*menu de las imagenes que se ha n seleccionado */
+    .menuOptionsItemsSelectedImgContent
+    {
+        position: relative;
+        height: 100px;
+        width: 100px;
+        display: none;
+        top: 10px;
+        left: 10px;
+        background-color: #d9d9d9;
+        border-radius: 20px 0px 20px 20px;
+        z-index: 1;
+    }
+    /**/
+    
+    /*Busqueda dinamica, seccion de la pantalla BUSQUEDA donde se muestra las imagenes seleccionadas*/
+    #contentBusqueda{
+        margin-top: 50px;
+        display: flex;
+        height:300px;
+    }
+    /*cambia en la dimension de la pantalla*/
+    #section1{
+        width: 100%;
+        height:100%;
+        overflow: scroll;
+    }
+    .itemsAllImagenBuscar{
+        background: #ffffff;
+        height: 70px;
+        width:90%;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        text-align: right;
+        border-radius: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #ulAllImagesBuscar{
+        list-style: none;
+        margin-left: -40px;
+        padding: 0;
+        margin: 0;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .itemsAllImagenBuscar>.imgAllItemBuscar{
+        display: none;
+        position: relative;
+        top: -20px;
+        height:250px;
+        width:100%;
+        cursor: zoom-in;
+    }
+    .itemsAllImagenBuscar>p{
+        position: relative;
+        top: 20%;
+        text-align: left ;
+        width: 90%;
+        height: 30px;
+        margin-top: 10px;
+        font-size: 15px;
+        font-family:monospace;
+        color: #808080; 
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+    }
+    .iconAdd{
+        position: relative;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        background-color: #FF4081;
+        top: 10px;
+        right: 0px;
+        transition: background 1s;
+    }
+    
+    #listSongs{
+        display: none;
+        width: 30%;
+        height:600px;
+        
+    }
+    #listSongs>.listNameSongs{
+
+        list-style: none;
+        height: 50px;
+        width: 200px;
+        text-align: left;
+        text-overflow: ellipsis;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        font-size: 15px;
+        font-family:monospace;
+    }
+    /* seccion de ver imagen */
+    #bsDialog{
+        display: none;
+    overflow: scroll;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    border: none;
+    background-color:black;
+    display: none;
+    z-index: 1;
+}
+  /*Menu MObile  */
+  #menuMobile{
+      display: inline;
+     
+  }    
+    .ContentMenuMobile{
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        
+    }
+    .titleMenu{
+        position: relative;
+        width: 300px;
+        height: 150px;
+        text-align: center;
+        bottom: 22px;
+        margin: 0;
+    }
+    .titleMenu>.h1{
+        position: relative;
+        top: 30%;
+    }
+    .menuMobile{
+        background-color:#FFFFFF;
+        width: 300px;
+        height: 100%;
+        padding-top: 1px;
+    }
+    #ulMobile{
+        list-style: none; 
+        position: relative;
+        top: -37px;
+    }
+    .itemsMenuMobile{
+        position: relative;
+        background-color:#FFFFFF ;
+        display: flex;
+        height: 50px;
+        width: 300px;
+        text-align: center;
+        right: 40px;
+        margin-bottom: 3px;
+        box-shadow: 1px 3px 10px 1px #f2f2f2;
+    }
+    .itemsMenuMobile:active{
+        background-color: #f2f2f2;
+    }
+    .itemsMenuMobile>.icons{
+        position: relative;
+        padding: 20px 20px 10px 20px;        
+        margin: 0;
+        top: auto;
+    }
+    
+    .urlTextNavMobile{
+        position: relative;
+        width: 100%;
+        height: auto;
+        color: #212121;
+        text-decoration: none;
+        padding: 0px 15px 0px 15px ;
+    }
+    .urlTextNavMobile>p{
+        position: relative;
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+        text-align: left;
+        top: 30%;
+    }
+    .urlTextNavMobile:hover{
+        color: #757575;
+        text-decoration: none;
+    }
+    .iconsMenuMobile{
+        position: relative;
+        width: 30%;
+        height: 100%;
+        
+        z-index: 1;
+    }
+    
+    .finishMenu{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #999999;
+        opacity: 0.3;
+    }
+    /*Boton para agregar canciones en Mobile*/
+    #addSongsContador{
+        position: fixed;
+        height: 200px;
+        width: 200px;
+        top: 0;
+        right: 0;
+    }
+    
+    /*footer from page*/
+    .dc-loading{
+     position: relative;
+        top: 10px;
+        padding: 30px;
+    }
+}
