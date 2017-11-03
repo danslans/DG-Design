@@ -6,9 +6,26 @@
 /*JavasScript Que controla el menu (los puntos)*/
 var stateMenu=false;
 var state=false;
+var touchStart=0;
+var touchEnd=0;
+var resultTouch=0;
 function startApp() {
-		//app.ShowPopup( "izq to drc  = "+izq +" drc to izq "+ drc );
-    document.getElementById("ContentMenuMobile").addEventListener("touchmove", touchEvent, false);
+	dimensiones();
+   // document.getElementById("ContentMenuMobile").addEventListener("touchmove", touchEvent, false);
+	document.getElementById("ContentMenuMobile").addEventListener("touchstart", function(event){
+		var touch=event.changedTouches;
+		touchStart=touch[0].screenX;
+		//alert("start "+touchStart);
+	}, false);
+	document.getElementById("ContentMenuMobile").addEventListener("touchend", function(event){
+		var touch=event.changedTouches;
+		touchEnd=touch[0].screenX;
+		resultTouch= parseInt(touchStart-touchEnd);
+		if(resultTouch>100){
+			document.getElementById("ContentMenuMobile").style = "display:none";
+			stateMenu=false;
+		}
+		}, false);
     document.getElementById("menuMobile").addEventListener("click",controllerMenu,false);
     document.getElementById("finishMenu").addEventListener("click",function(event){
        var ponerFlex ="display:flex;";
@@ -54,15 +71,16 @@ function controllerMenu(event){
 }
 function touchEvent(event){
     var touch= event.changedTouches;
-    document.getElementById("p").innerHTML= touch[0].screenX;   
-           if(touch[0].screenX>200 && touch[0].screenX<350){
+   // document.getElementById("p").innerHTML= "start "+touchStart+" end "+touchEnd+" result "+ parseInt(touchStart-touchEnd); 
+	/*
+         if(touch[0].screenX>200 && touch[0].screenX<window.innerWidth){
               if(stateMenu){
               document.getElementById("ContentMenuMobile").style = "display:none";
       //  $("#ContentMenuMobile").fadeOut("fast");   
         stateMenu=false;
        }
            // app.ShowPopup(" Derecha a Izquierda");
-        }
+        }*/
     }
 function dimensiones() {
     var quitar="display:none;";

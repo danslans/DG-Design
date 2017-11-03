@@ -3,27 +3,29 @@
     Author     : danslans
 @import "compass/css3";
 */
-
-
-li{
-    color:red;
-    }
+/*color principal de la pagina.*/
 body{
     margin: auto;  
     background-color: #ffffff;
 }
+/*color del header, menu.*/
 #header{
 		background: #0D47A1;
     box-shadow:10px 3px 10px 3px #ffffff; 
 }
-
+/*color de los objetos puestos en el menu, ejem: boton lupa*/
 .itemsMenu{
         background-color: #03A9F4;
     }
+/*color del menu movil, generalmente igual al color del header*/
 .titleMenu{
     background-color: #0D47A1;
     box-shadow: 2px 2px 20px 2px #9E9E9E;
     }
+/*    */
+.itemsAllImagen{
+  background-color: red;
+}
 /*web*/
 @media not screen and (max-width: 200px) {
     /*this section is for header   1000px*/
@@ -135,7 +137,6 @@ body{
     /*los items (imagenes) INDEX*/
     .itemsAllImagen{
         position: relative;
-        background-color: black;
         height: 100%;
         width: 300px;
         padding-right: 10px;
