@@ -6,7 +6,7 @@
 /*color principal de la pagina.*/
 body{
     margin: auto;  
-    background-color: #ffffff;
+    background-color: #cccccc;
 }
 /*color del header, menu.*/
 #header{
@@ -26,6 +26,11 @@ body{
 .itemsAllImagen{
   background-color: White;
 }
+/**Color de la seccion*/
+#section{
+    background-color:white;
+}
+
 /*web*/
 @media not screen and (max-width: 200px) {
     /*this section is for header   1000px*/
@@ -126,14 +131,15 @@ body{
     #section{
         position: absolute;
         width: 100%;
-		background-color:red;
     }
     /*el ul que contiene las imagenes INDEX */
     #ulAllImages{
+        position: relative;
         list-style: none;
         display: flex;
         overflow-x: scroll;
         margin-left: -45px;
+        
     }
     /*los items (imagenes) INDEX*/
     .itemsAllImagen{
@@ -147,7 +153,7 @@ body{
         font-size: 20px;
         text-align: center;
         border-radius: 10px;
-        color: white;
+        color: black;
     }
     .itemsAllImagen>.imgAllItem{
         position: relative;
