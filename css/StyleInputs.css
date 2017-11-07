@@ -39,7 +39,7 @@ background-color: #e6e6e6;
     .input{
         height: 40px;
     }
-.inputTextSeardHeader{
+.inputTextSearchHeader{
     margin-top: 10px;
     width: 100px;
     height: 30px;
@@ -49,8 +49,8 @@ background-color: #e6e6e6;
   -webkit-transition: width .35s ease-in-out;
   transition: width .35s ease-in-out;
 }
-.inputTextSeardHeader:focus{
-    width: 200px;
+.inputTextSearchHeader:focus{
+    width: 150px;
     outline: 0;
 }
 .botonMenuOptionsItemsSelectedImg{
