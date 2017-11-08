@@ -6,7 +6,7 @@
 /*color principal de la pagina.*/
 body{
     margin: auto;  
-    background-color: #cccccc;
+    background-color: red;
 }
 /*color del header, menu.*/
 #header{
@@ -20,7 +20,7 @@ body{
 /*color del menu movil, generalmente igual al color del header*/
 .titleMenu{
     background-color: #0D47A1;
-    box-shadow: 2px 2px 20px 2px #9E9E9E;
+    box-shadow: 0px 0px 0px 0px #9E9E9E;
     }
 /*    */
 .itemsAllImagen{
@@ -121,16 +121,17 @@ body{
         left: 50%;
         top: 0; 
     }
-    /*diseño del contenido general*/
+    /*-diseño del contenido general*/
     #contenedor{
-        position: relative;
-        top: 60px;
-        
-    }
-    /*Seccion que contiene la informacion de la pagina*/
-    #section{
         position: absolute;
+        top: 40px;
+		width:100%;
+    }
+    /*-Seccion que contiene la informacion de la pagina*/
+    #section{
+        position: relative;
         width: 100%;
+		top:10px;
     }
     /*el ul que contiene las imagenes INDEX */
     #ulAllImages{
@@ -463,4 +464,7 @@ body{
         top: 10px;
         padding: 30px;
     }
+	.scroll{
+	  overflow:scroll;
+	}
 }
