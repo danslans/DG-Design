@@ -6,7 +6,7 @@
     <link  rel="stylesheet" type="text/css" href="css/StyleIcons.css" />
     <link  rel="stylesheet" type="text/css" href="css/StyleInputs.css" />
 </head>
-<body onload="startApp()" id="index">
+<body onload="startApp();CreateDb();" id="index">
  <header id="header">
             <div class="content">
                <span id="menuMobile" class="iconsMenuMobile IcMenuMobile"></span>
@@ -110,62 +110,18 @@
 				</li>
 			  </ul>
 		  </section>
-		  <section id="section" class="">
-           <ul id="ulAllImages">
-                    <li class="itemsAllImagenBuscar">
-                        <p onclick="">Prueba Texto</p>
-                        <span id="" class="iconAdd " onclick="" ></span>
-                    </li>
-                    <li class="itemsAllImagenBuscar">
-                        <p onclick="">Prueba Texto</p>
-                        <span id="" class="iconAdd " onclick="" ></span>
-                    </li>
-                    <li class="itemsAllImagenBuscar">
-                        <p onclick="">Prueba Texto</p>
-                        <span id="" class="iconAdd " onclick="" ></span>
-                    </li>
-                    <li class="itemsAllImagenBuscar">
-                        <p onclick="">Prueba Texto</p>
-                        <span id="" class="iconAdd " onclick="" ></span>
-                    </li>
-                    <li class="itemsAllImagenBuscar">
-                        <p onclick="">Prueba Texto</p>
-                        <span id="" class="iconAdd " onclick="" ></span>
-                    </li>
-
-                </ul>
-            </section>
-             <section id="section" class="scroll dimension">
+		  <section id="section" class="scroll dimension">
            <ul id="ulAllImagesBuscar">
-                    <li class="itemsAllImagenBuscar">
-                        <p onclick="">Prueba Texto</p>
-                        <span id="" class="iconAdd " onclick="" ></span>
-                    </li>
-                    <li class="itemsAllImagenBuscar">
-                        <p onclick="">Prueba Texto</p>
-                        <span id="" class="iconAdd " onclick="" ></span>
-                    </li>
-                    <li class="itemsAllImagenBuscar">
-                        <p onclick="">Prueba Texto</p>
-                        <span id="" class="iconAdd " onclick="" ></span>
-                    </li>
-                    <li class="itemsAllImagenBuscar">
-                        <p onclick="">Prueba Texto</p>
-                        <span id="" class="iconAdd " onclick="" ></span>
-                    </li>
-                    <li class="itemsAllImagenBuscar">
-                        <p onclick="">Prueba Texto</p>
-                        <span id="" class="iconAdd " onclick="" ></span>
-                    </li>
-
+                    
                 </ul>
-            </section>
+            </section>  
         </div>
         
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <!-- Latest compiled JavaScript -->
-    <script src="js/ControllerApp.js"></script>      
+    <script src="js/ControllerApp.js"></script>   
+	<script src="js/DbScript.js"></script>
 </body>
 </html>
