@@ -10,7 +10,7 @@ var touchStart=0;
 var touchEnd=0;
 var resultTouch=0;
 function startApp() {
-	dimensiones();
+	//dimensiones();
    // document.getElementById("ContentMenuMobile").addEventListener("touchmove", touchEvent, false);
 	document.getElementById("ContentMenuMobile").addEventListener("touchstart", function(event){
 		var touch=event.changedTouches;
