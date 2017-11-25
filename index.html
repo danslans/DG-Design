@@ -7,19 +7,19 @@
     <link  rel="stylesheet" type="text/css" href="css/StyleInputs.css" />
 </head>
 <body onload="startApp(); var obj= new Persons; obj.CreateDb();" id="index">
- <header id="header">
+ <header class="header">
             <div class="content">
-               <span id="menuMobile" class="iconsMenuMobile IcMenuMobile"></span>
-                <div id="title">
+			  <span id="menuMobile" class="menuMobile iconsMenuMobile IcMenuMobile"></span>
+                <div class="title">
                     <h1 class="h1"><a class="a" href="">Title Page</a></h1>
                 </div>
-                 <div id="formBusqueda">
+                 <div class="formBusqueda">
 				   <input type="text" id="" class="inputTextSearchHeader" value="" name="" placeholder="add Text" required="required">
                      <div  class="itemsMenu IcLupaMobile" id="buscar"   onclick="" ></div> 
             </div>
                <div class="iconsMore IcMore" id="more"></div>
-                <div id="subMenu" >
-                        <ul id="ulSub">
+                <div class="subMenu" >
+                        <ul class="ulSub">
                         <li>
                             <input type="button" value="Item"  class="botonMenu" />
                             </li>
@@ -43,7 +43,7 @@
                 <h1 class="h1"><a class="a" href="#">Title Page</a></h1>
             </div>
             <nav>
-                <ul id="ulMobile">
+                <ul id="ulMobile" class="ulMobile">
                     
                     <li class="itemsMenuMobile"><span class="icons IcHomeMobile"></span><a href="#" class="urlTextNavMobile">
                         <p>Item1</p>
@@ -64,18 +64,19 @@
             </div>
         </div>
         
-        <div id="contenedor">
+  <div id="contenedor" class="contenedor">
            <p id="p"></p>
-            <section id="section">	
-                <ul id="ulAllImages">
+            <section id="section" class="section">	
+			  <ul id="ulAllImages" class="ulAllImages">
                 </ul>
 			</section>
-		  <section id="section" class="scroll dimension">
-           <ul id="ulAllImagesBuscar">
+		  <section id="section" class="section scroll dimension">
+			<ul id="ulAllImagesBuscar" class="ulAllImagesBuscar">
                     
                 </ul>
             </section>  
         </div>
+  <script src="file:///sdcard/Download/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>

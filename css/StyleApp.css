@@ -9,7 +9,7 @@ body{
     background-color: #cccccc;
 }
 /*color del header, menu.*/
-#header{
+.header{
 		background: #0D47A1;
     box-shadow:0px 0px 0px 0px #ffffff; 
 }
@@ -27,14 +27,14 @@ body{
   background-color: White;
 }
 /**Color de la seccion*/
-#section{
+.section{
     background-color:white;
 }
 
 /*web*/
 @media not screen and (max-width: 200px) {
     /*this section is for header   1000px*/
-    #header{
+    .header{
         display: flex;
         position:fixed;
         width: 100%;
@@ -47,7 +47,7 @@ body{
         height: 100%;
         width: 100%;
     }
-    #title{
+    .title{
         position: relative;
         display: none;
         margin-left: 80px;
@@ -89,7 +89,7 @@ body{
     }
     /*Submenu from more ALL MENU*/
 
-    #ulSub{
+    .ulSub{
         width: auto;
         height: auto;
         position: absolute;
@@ -100,20 +100,20 @@ body{
         display: none;
     }
     /*atras y siguiente INDEX*/
-    #atras{
+    .atras{
         position: absolute;
         padding: 20px;
         height: 100%;
         width: 40%;
         top: 0;
     }
-    #atras:focus{
+    .atras:focus{
         outline: 0;
     }
-    #atras:hover{
+    .atras:hover{
         outline: 0;
     }
-    #siguiente{
+    .siguiente{
         position: absolute;
         padding: 20px;
         height: 100%;
@@ -122,19 +122,19 @@ body{
         top: 0; 
     }
     /*-diseño del contenido general*/
-    #contenedor{
+    .contenedor{
         position: absolute;
         top: 45px;
 		width:100%;
     }
     /*-Seccion que contiene la informacion de la pagina*/
-    #section{
+    .section{
         position: static;
         width: 100%;
         margin-top: 10px;
     }
     /*el ul que contiene las imagenes INDEX */
-    #ulAllImages{
+    .ulAllImages{
         position: relative;
         list-style: none;
         display: flex;
@@ -168,7 +168,7 @@ body{
         cursor: zoom-in;
     }
     /*DiseÃ±o de la PROYECXION INDEX */ 
-    #dialogo{
+    .dialogo{
         display: none;
         background: black;
         position:absolute;
@@ -177,11 +177,11 @@ body{
         width: 100%;
         height: 100%;
     }
-    #imgDialog{
+    .imgDialog{
         height: 100%;
         width: 100%;
     }
-    #x{
+    .x{
         position: fixed;
         height: 60px;
         width: 60px;
@@ -196,18 +196,18 @@ body{
     }
     /*este es cambiante para las pantallas*/
     /*Este es el formulario de buscar */
-    #formBusqueda{ 
+    .formBusqueda{ 
         width: 70%;
         display: flex;
         position: relative;
         justify-content: center;
     }
-    #recibir{
+    .recibir{
         height: 100px;
         width: 100%;
     }
     /*diseÃ±o de la lista que se ha seleccionado*/
-    #ulSelectedImg{
+    .ulSelectedImg{
         position: relative;
         padding: 0;
         height: 100px;
@@ -254,13 +254,13 @@ body{
     /**/
     
     /*Busqueda dinamica, seccion de la pantalla BUSQUEDA donde se muestra las imagenes seleccionadas*/
-    #contentBusqueda{
+    .contentBusqueda{
         margin-top: 50px;
         display: flex;
         height:300px;
     }
     /*cambia en la dimension de la pantalla*/
-    #section1{
+    .section1{
         width: 100%;
         height:100%;
         overflow: scroll;
@@ -280,7 +280,7 @@ body{
         justify-content: space-between;
         
     }
-    #ulAllImagesBuscar{
+    .ulAllImagesBuscar{
         list-style: none;
         margin-left: -40px;
         padding: 0;
@@ -327,13 +327,13 @@ body{
         transition: background 1s;
     }
     
-    #listSongs{
+    .listSongs{
         display: none;
         width: 30%;
         height:600px;
         
     }
-    #listSongs>.listNameSongs{
+    .listSongs>.listNameSongs{
 
         list-style: none;
         height: 50px;
@@ -346,7 +346,7 @@ body{
         font-family:monospace;
     }
     /* seccion de ver imagen */
-    #bsDialog{
+    .bsDialog{
         display: none;
     overflow: scroll;
     position: absolute;
@@ -360,7 +360,7 @@ body{
     z-index: 1;
 }
   /*Menu MObile  */
-  #menuMobile{
+  .menuMobile{
       display: inline;
      
   }    
@@ -390,7 +390,7 @@ body{
         height: 100%;
         padding-top: 1px;
     }
-    #ulMobile{
+    .ulMobile{
         list-style: none; 
         position: relative;
         top: -37px;
@@ -452,7 +452,7 @@ body{
         opacity: 0.3;
     }
     /*Boton para agregar canciones en Mobile*/
-    #addSongsContador{
+    .addSongsContador{
         position: fixed;
         height: 200px;
         width: 200px;
