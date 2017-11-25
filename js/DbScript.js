@@ -12,7 +12,8 @@ constructor(){
 			objectStore.createIndex("email","email",{unique:true});
 			objectStore.transaction.oncomplete=function(event){
 				var customerObjectStore= dbI.transaction("persons","readwrite");
-				customerObjectStore.add({id:1,name:"daniel",email:"correo@correo.com"});
+				var store = customerObjectStore.objectStore("persons");
+				store.add({id:1,name:"daniel",email:"correo@correo.com"});
 			}
 
 		}
@@ -42,12 +43,12 @@ constructor(){
 			//alert(result.rows.item(0).url);
 			for(var i=0;i<filas;i++){
 			var li=document.createElement("li");
-			li.className="itemsAllImagenBuscar";
+			var span=document.createElement("span");
 			var p=document.createElement("p");
+			li.className="itemsAllImagenBuscar";
+			span.className="iconAdd";
 			p.innerText=result.rows.item(i).name;
 			li.appendChild(p);
-			var span=document.createElement("span");
-			span.className="iconAdd";
 			li.appendChild(span);
 			write.appendChild(li);
 			
