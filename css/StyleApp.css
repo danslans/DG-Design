@@ -33,7 +33,7 @@ body{
 
 /*web*/
 @media not screen and (max-width: 200px) {
-    /*this section is for header   1000px*/
+    /*encabezado de la pagina*/
     .header{
         display: flex;
         position:fixed;
